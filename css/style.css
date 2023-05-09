@@ -1,3 +1,9 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
 .marca {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
@@ -6,7 +12,16 @@
     background-color: black;
     color: azure;
     text-align: center;
+    align-items: center;
 }
+
+/* .marca h1 {
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    inline-size: 15rem;
+    align-items: center;
+} */
 
 .marca img {
     width: 100%;
@@ -14,12 +29,20 @@
 
 
 nav {
-    padding: 2rem;
+    padding: 0.6rem;
     background-color: firebrick;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 nav a {
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid chartreuse;
+    color: whitesmoke;
+    text-decoration: none;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -27,17 +50,45 @@ nav a:hover {
 }
 
 main {
+    padding: 0px;
     display: grid;
-    /* grid-template-rows: 1fr; */
-    grid-template-columns: 3fr 1fr;
-    border-color: blue;
-    border: 5px solid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    border: 0px solid blue;
+    background-color: black;
 }
 
-#seccionTexto {
-    border: 5px solid red;
+#insertInstagram {
+    border: 2px solid red;
+    height: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 }
 
 #seccionMapa {
-    border: 5px solid green;
+    border: 2px solid green;
+    height: 100%;
+    align-items: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+/* #seccionMapa h2 {
+    text-align: center;
+} */
+
+.rss {
+    position: static;
+    padding: 0.6rem;
+    background-color: black;
+    border: 2px solid pink;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rss a {
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
 }
