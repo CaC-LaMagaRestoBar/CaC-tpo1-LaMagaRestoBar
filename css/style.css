@@ -2,34 +2,34 @@ html {
     padding: 0;
     margin: 0;
     background-color: black;
+    font-size: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
 }
 
 .marca {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr;
     grid-template-rows: 1fr;
-    /* height: 12rem; */
-    background-color: black;
     color: azure;
     text-align: center;
     align-items: center;
 }
 
-/* .marca h1 {
-    text-align: center;
-    vertical-align: middle;
-    justify-content: center;
-    inline-size: 15rem;
-    align-items: center;
-} */
-
 .marca img {
     width: 100%;
 }
 
+.container {
+    color: whitesmoke
+}
+
+div {
+    color: whitesmoke
+}
 
 nav {
-    padding: 0.6rem;
+    padding: 1rem;
     background-color: firebrick;
     text-align: center;
     display: grid;
@@ -42,7 +42,6 @@ nav a {
     text-decoration: none;
     height: 100%;
     font-size: 2rem;
-    font-weight: bold;
 }
 
 nav a:hover {
@@ -52,35 +51,102 @@ nav a:hover {
 main {
     padding: 0px;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr;
-    border: 0px solid blue;
-    background-color: black;
+    grid-template-rows: 1fr 2fr 1fr 4fr;
+    grid-template-columns: 3fr 1fr;
+    border: 2px solid blue;
 }
+
+.tituloClima {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px orange solid;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tituloClima p {
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border: 2px pink solid;
+    gap: 0.3rem;
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    margin: -0.7rem 0.1rem 0rem 0.1rem;
+  }
+  
+  .forecast-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+  
+  .forecast-column h2 {
+    font-size: 1.2rem;
+    /* margin-bottom: 10px; */
+  }
+  
+  .forecast-column img.icon {
+    width: 6rem;
+    height: 6rem;
+    /* margin-bottom: -1rem; */
+  }
+  
+  .forecast-column p {
+    margin: 1px 0;
+    font-size: 1.4rem;
+  }
 
 #insertInstagram {
     border: 2px solid red;
     height: 100%;
-    grid-row: 1 / 2;
+    width: 100%;
+    grid-row: 1 / 5;
     grid-column: 1 / 2;
 }
 
-#seccionMapa {
+.botonMap {
+    position: relative;
+    width: 100%;
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+}
+
+#map {
     border: 2px solid green;
     height: 100%;
     align-items: center;
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-}
+    grid-row: 4 / 5;
+    grid-column: 2 / 2;
+    }
 
-/* #seccionMapa h2 {
-    text-align: center;
+/* #seccionMapa {
+    border: 2px solid green;
+    height: 100%;
+    align-items: center;
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
 } */
 
 .rss {
     position: static;
-    padding: 0.6rem;
-    background-color: black;
+    padding: 1rem;
     border: 2px solid pink;
     text-align: center;
     display: grid;
