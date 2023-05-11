@@ -33,7 +33,7 @@ async function getForecast() {
       iconElement.setAttribute('src', `https:${icon}`);
       maxTempElement.textContent = `${maxTemp} °C`;
       minTempElement.textContent = `${minTemp} °C`;
-    // *irrelevante la humedad*   humidityElement.textContent = `${humidity}%`;
+    // humidityElement.textContent = `${humidity}%`;
       conditionElement.textContent = condition;
     });
   } catch (error) {
