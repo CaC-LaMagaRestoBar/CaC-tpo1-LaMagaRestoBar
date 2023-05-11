@@ -9,68 +9,85 @@ html {
 
 .marca {
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 1fr 3fr 1.3fr;
     grid-template-rows: 1fr;
-    color: azure;
+    color: whitesmoke;
     text-align: center;
     align-items: center;
 }
 
-.marca img {
-    width: 100%;
+.cabecera h1 {
+    font-size: 5vw;
 }
 
-.container {
-    color: whitesmoke
+.cabecera h3 {
+    font-size: 1.5vw;
 }
 
-div {
-    color: whitesmoke
+.logotipo img {
+    width: 20vw;
+}
+
+.direccion {
+    font-size: 1vw;
+}
+
+.direccion img {
+    width: 2vw;
 }
 
 nav {
-    padding: 1rem;
+    padding: 0.5vw;
     background-color: firebrick;
-    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
 nav a {
-    border: 2px solid chartreuse;
+    /* border: 2px solid chartreuse; */
     color: whitesmoke;
     text-decoration: none;
     height: 100%;
-    font-size: 2rem;
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
 }
 
 nav a:hover {
     background-color: aqua;
+    
 }
 
 main {
     padding: 0px;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr 4fr;
+    grid-template-rows: 0.52fr 1fr 0.5fr 2fr;
     grid-template-columns: 3fr 1fr;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    box-sizing: auto;
 }
 
 .tituloClima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 1rem 0;
-    padding: 1rem;
+    padding: 0.5vw;
     border-radius: 1rem;
-    border: 2px orange solid;
+    /* border: 2px orange solid; */
     background-color: #f5f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+    
 }
 
 .tituloClima p {
     text-align: center;
-    align-items: center;
-    font-size: 2rem;
+    font-size: 1.3vw;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 0 0;
     color: black;
 }
 
@@ -78,14 +95,14 @@ main {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    border: 2px pink solid;
+    /* border: 2px pink solid; */
     gap: 0.3rem;
     grid-row: 2 / 2;
     grid-column: 2 / 2;
-    margin: -0.7rem 0.1rem 0rem 0.1rem;
+    margin: 0rem 0.1rem 0rem 0.1rem;
   }
   
-  .forecast-column {
+.forecast-column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,43 +114,56 @@ main {
     color: black;
   }
   
-  .forecast-column h2 {
+.forecast-column h2 {
     font-size: 1.2rem;
     /* margin-bottom: 10px; */
   }
   
-  .forecast-column img.icon {
+.forecast-column img.icon {
     width: 6rem;
     height: 6rem;
     /* margin-bottom: -1rem; */
   }
   
-  .forecast-column p {
+.forecast-column p {
     margin: 1px 0;
     font-size: 1.4rem;
   }
 
 #insertInstagram {
-    border: 2px solid red;
-    height: 100%;
+    /* border: 2px solid red; */
+    /* height: 100%; */
     width: 100%;
     grid-row: 1 / 5;
     grid-column: 1 / 2;
 }
 
 .botonMap {
-    position: relative;
-    width: 100%;
-    grid-row: 3 / 3;
+    grid-row: 3 / 3 ;
     grid-column: 2 / 2;
+    /* border: 2px gold solid; */
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-self: center;
+    border-radius: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    /* width: 99%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 #map {
-    border: 2px solid green;
-    height: 100%;
+    /* border: 2px solid green; */
+    /* height: 100%; */
     align-items: center;
     grid-row: 4 / 5;
     grid-column: 2 / 2;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
 /* #seccionMapa {
@@ -147,7 +177,7 @@ main {
 .rss {
     position: static;
     padding: 1rem;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,4 +187,31 @@ main {
     text-decoration: none;
     color: whitesmoke;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 0.5fr 1fr 0.5fr 3fr;
+    }
+
+    #insertInstragram, .tituloClima, .forecast-container, #map, .botonMap {
+        grid-column: 1 / 1;
+    }
+
+    #insertInstagram {grid-row: 1 / 1;}
+    .tituloClima {grid-row: 2 / 2;}
+    .forecast-container {display: flex;grid-row: 3 / 3;}
+    .botonMap {grid-row: 4 / 4;}
+    #map {grid-row: 5 / 5;}
+
+    .marca {
+        grid-template-columns: 1fr;
+    }
+    .direccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 }

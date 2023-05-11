@@ -50,7 +50,8 @@ let map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: -34.59617384942703, lng: -58.43705617606266 },
-    zoom: 14,
+    zoom: 15,
+    // trafficControl: true,
     disableDefaultUI: false
   });
 
@@ -59,7 +60,8 @@ const magaMarker = new google.maps.Marker({
   map: map,
   title: 'Bar La Maga'
 });
-}
+
+};
 
 function activarCapaDeTrafico() {
   const trafficLayer = new google.maps.TrafficLayer();
