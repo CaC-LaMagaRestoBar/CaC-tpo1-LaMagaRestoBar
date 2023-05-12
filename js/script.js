@@ -23,18 +23,21 @@ async function getForecast() {
       const minTemp = dayData.day.mintemp_c;
       const humidity = dayData.day.avghumidity;
       const condition = dayData.day.condition.text;
+      const chanceOfRain = dayData.day.daily_chance_of_rain;
 
       const iconElement = column.querySelector('.icon');
       const maxTempElement = column.querySelector('.max-temp');
       const minTempElement = column.querySelector('.min-temp');
       const humidityElement = column.querySelector('.humidity');
       const conditionElement = column.querySelector('.condition');
+      const chanceOfRainElement = column.querySelector('.chance_of_rain');
 
       iconElement.setAttribute('src', `https:${icon}`);
       maxTempElement.textContent = `${maxTemp} °C`;
       minTempElement.textContent = `${minTemp} °C`;
-    // humidityElement.textContent = `${humidity}%`;
+      // humidityElement.textContent = `${humidity}%`;
       conditionElement.textContent = condition;
+      chanceOfRainElement.textContent = `${chanceOfRain}%`;
     });
   } catch (error) {
     console.error(error);

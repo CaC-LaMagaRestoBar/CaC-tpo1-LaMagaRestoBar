@@ -1,8 +1,8 @@
 html {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0;
     background-color: black;
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
 }
@@ -17,77 +17,99 @@ html {
 }
 
 .cabecera h1 {
-    font-size: 5vw;
+    font-size: 5rem; /*50px*/
 }
 
 .cabecera h3 {
-    font-size: 1.5vw;
+    font-size: 2rem;
 }
 
 .logotipo img {
-    width: 20vw;
+    width: 20rem;
 }
 
 .direccion {
-    font-size: 1vw;
+    font-size: 1.6rem;
+}
+
+.direccion p {
+    margin-bottom: 0.5rem;
 }
 
 .direccion img {
-    width: 2vw;
+    width: 3rem;
+    margin-bottom: -1.6rem;
+}
+
+.direccion img:hover, .logotipo img:hover {
+    animation: shake 0.1s linear;
+    animation-duration: 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-10deg)
+    }
+    50% {
+        transform: rotate(10deg)
+    }
 }
 
 nav {
-    padding: 0.5vw;
     background-color: firebrick;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    margin-bottom: 1px;
 }
 
-nav a {
-    /* border: 2px solid chartreuse; */
+.rss {
+    background-color: firebrick;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav a, .rss a {
+    padding: 1rem;
     color: whitesmoke;
     text-decoration: none;
-    height: 100%;
-    font-size: 1.5vw;
+    font-size: 2rem;
     text-align: center;
     align-items: center;
+    transition: 0.5s;
 }
 
-nav a:hover {
-    background-color: aqua;
-    
+nav a:hover, .rss a:hover {
+    text-decoration: underline;
+    background-color: rgb(122, 20, 20);
 }
 
 main {
-    padding: 0px;
     display: grid;
-    grid-template-rows: 0.52fr 1fr 0.5fr 2fr;
+    grid-template-rows: 0.52fr 0.85fr 0.52fr 2fr;
     grid-template-columns: 3fr 1fr;
-    /* border: 2px solid blue; */
-    box-sizing: auto;
+    gap: 0.2rem;
 }
 
 .tituloClima {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 1rem 0;
-    padding: 0.5vw;
     border-radius: 1rem;
-    /* border: 2px orange solid; */
     background-color: #f5f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     grid-row: 1 / 1;
     grid-column: 2 / 2;
-    
+    transition: 0.3s   
+}
+
+.tituloClima:hover, .forecast-column:hover, .botonMap:hover {
+    background-color: #d0cece;
 }
 
 .tituloClima p {
     text-align: center;
-    font-size: 1.3vw;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin: 0 0 0 0;
     color: black;
 }
 
@@ -96,38 +118,37 @@ main {
     justify-content: center;
     max-width: 100%;
     /* border: 2px pink solid; */
-    gap: 0.3rem;
+    gap: 0.2rem;
     grid-row: 2 / 2;
     grid-column: 2 / 2;
-    margin: 0rem 0.1rem 0rem 0.1rem;
   }
   
 .forecast-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #f5f5f5;
-    border-radius: 5px;
-    padding: 1rem;
+    border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: black;
   }
   
 .forecast-column h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* margin-bottom: 10px; */
   }
   
 .forecast-column img.icon {
     width: 6rem;
     height: 6rem;
-    /* margin-bottom: -1rem; */
+    margin: -1.2rem 0 -1rem 0;
   }
   
 .forecast-column p {
-    margin: 1px 0;
-    font-size: 1.4rem;
+    margin: 0.1rem;
+    font-size: 1rem;
   }
 
 #insertInstagram {
@@ -141,19 +162,17 @@ main {
 .botonMap {
     grid-row: 3 / 3 ;
     grid-column: 2 / 2;
-    /* border: 2px gold solid; */
     background-color: #f5f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-    align-self: center;
     border-radius: 1rem;
     color: black;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    /* width: 99%; */
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    height: 100%;    
 }
 
 #map {
@@ -166,30 +185,16 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-/* #seccionMapa {
-    border: 2px solid green;
-    height: 100%;
-    align-items: center;
-    grid-row: 3 / 3;
-    grid-column: 2 / 2;
-} */
-
-.rss {
-    position: static;
-    padding: 1rem;
-    /* border: 2px solid pink; */
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.rss a {
-    text-decoration: none;
-    color: whitesmoke;
-    align-items: center;
-}
+    .container {
+        background-color: #f5f5f5;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
 
 @media screen and (max-width: 600px) {
+    html {
+        font-size: 6px;
+    }
+    
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -215,3 +220,6 @@ main {
     }
     
 }
+
+/* contact.html */
+

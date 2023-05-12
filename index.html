@@ -21,7 +21,7 @@
     <header>
         <div class="marca">
             <div class="logotipo">
-                <img src="img/marca.jpg" alt="logotipo La Maga Resto Bar">
+                <img src="img/marca-removebg-preview.png" alt="logotipo La Maga Resto Bar">
             </div>
             <div class="cabecera">
                 <h1>La Maga Resto Bar</h1>
@@ -29,7 +29,7 @@
             </div>
           
             <div class="direccion">
-                <div><a href="https://www.google.com/maps/place/La+Maga/@-34.5962147,-58.4378018,251m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bccb66f3c109bd:0xa7be817630ac7f02!8m2!3d-34.5962158!4d-58.4371581!16s%2Fg%2F11rcq7g2gp?shorturl=1"><img src="img/mapa.png" alt="icono mapa"></a>
+                <div><a href="https://www.google.com/maps/place/La+Maga/@-34.5962147,-58.4378018,251m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bccb66f3c109bd:0xa7be817630ac7f02!8m2!3d-34.5962158!4d-58.4371581!16s%2Fg%2F11rcq7g2gp?shorturl=1" target="_blank"><img src="img/mapa.png" alt="icono mapa"></a>
                 <p> Aguirre 686, Villa Crespo</p></div>
                 <div><img src="img/negocio.png" alt="icono abierto">
                 <p>Martes a Domingo</p></div>
@@ -41,9 +41,10 @@
     
     <nav>
             <a href="html.index">Inicio</a>
-            <a href="http://">Menú online</a>
+            <a href="menu.html">Menú online</a>
             <a href="https://goo.gl/maps/Aft4wa9b7ci8ZXDM9" target="_blank">Cómo llegar</a>
-            <a href="https://ig.me/m/lamaga_bar" target="_blank">Contacto (enviar DM)</a>
+            <a href="contact.html">Contacto</a>
+            <!-- <a href="https://ig.me/m/lamaga_bar" target="_blank">Contacto</a> -->
     </nav>
 
     <main>
@@ -65,6 +66,7 @@
                 <p>Mín.: <span class="min-temp"></span></p>
                 <p>Máx.: <span class="max-temp"></span></p>
                 <!-- <p>Humedad: <span class="humidity"></span></p> -->
+                <p>Prob. lluvia: <span class="chance_of_rain"></span></p>
             </div>
 
             <div class="forecast-column">
@@ -73,7 +75,7 @@
                 <p><span class="condition"></span></p>
                 <p>Mín.: <span class="min-temp"></span></p>
                 <p>Máx.: <span class="max-temp"></span></p>
-                
+                <p>Prob. lluvia: <span class="chance_of_rain"></span></p>
             </div>
             <div class="forecast-column">
                 <h2>Pasado mañana</h2>
@@ -81,7 +83,7 @@
                 <p><span class="condition"></span></p>
                 <p>Mín.: <span class="min-temp"></span></p>
                 <p>Máx.: <span class="max-temp"></span></p>
-                
+                <p>Prob. lluvia: <span class="chance_of_rain"></span></p>
             </div>
             <!-- <div class="forecast-column">
                 <h2>En dos días</h2>
@@ -100,7 +102,7 @@
         
         <div class="botonMap">
             <p>Hacé click para ver el estado del tráfico en la zona</p>
-            <button value="trafico" onclick="activarCapaDeTrafico()">Mostrar capa de tráfico</button>
+            <button value="trafico" onclick="activarCapaDeTrafico()">Mostrar tráfico</button>
         </div>
         
         <!-- API Google Maps Plataform -->
@@ -119,12 +121,13 @@
             <a href="http://">Tik Tok</a>
             <a href="http://">Facebook</a>
         </div>
+            
+        <div class="legales">
             legales de la página
 
 
             Aguirre 686, Villa Crespo, Ciudad de Buenos Aires.
-            CP: 1069
-        <div class="legales"></div>
+            CP: 1069</div>
     </footer>
 
 </body>
