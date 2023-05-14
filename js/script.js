@@ -54,17 +54,20 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: -34.59617384942703, lng: -58.43705617606266 },
     zoom: 15,
-    // trafficControl: true,
-    disableDefaultUI: false
+    disableDefaultUI: false,
   });
 
 const magaMarker = new google.maps.Marker({
   position: { lat: -34.596145, lng: -58.437147 },
   map: map,
-  title: 'Bar La Maga'
+  title: 'La Maga Resto Bar'
 });
 
 };
+
+marker.addListener('click', function() {
+  window.open('https://www.google.com/maps?ll=-34.596145,-58.437147&z=20&t=m&hl=es-419&gl=US&mapclient=apiv3&cid=12087240794531725058', '_blank');
+});
 
 function activarCapaDeTrafico() {
   const trafficLayer = new google.maps.TrafficLayer();

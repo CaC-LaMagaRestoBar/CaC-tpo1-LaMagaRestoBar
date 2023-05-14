@@ -10,44 +10,20 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
     <!-- API Google Fonts para Fira Sans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>La Maga Resto Bar</title>
 </head>
 <body>
-    <header>
-        <div class="marca">
-            <div class="logotipo">
-                <img src="img/marca-removebg-preview.png" alt="logotipo La Maga Resto Bar">
-            </div>
-            <div class="cabecera">
-                <h1>La Maga Resto Bar</h1>
-                <h3>Desayunos | Brunch | Almuerzos | Gourmet | Meriendas | Tortas</h3>
-            </div>
-          
-            <div class="direccion">
-                <div><a href="https://www.google.com/maps/place/La+Maga/@-34.5962147,-58.4378018,251m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bccb66f3c109bd:0xa7be817630ac7f02!8m2!3d-34.5962158!4d-58.4371581!16s%2Fg%2F11rcq7g2gp?shorturl=1" target="_blank"><img src="img/mapa.png" alt="icono mapa"></a>
-                <p> Aguirre 686, Villa Crespo</p></div>
-                <div><img src="img/negocio.png" alt="icono abierto">
-                <p>Martes a Domingo</p></div>
-                <div><img src="img/hora-del-reloj.png" alt="icono horario">
-                <p>10am a 8pm</p></div>
-            </div>
-        </div>
-    </header>
+    <header></header>
     
-    <nav>
-            <a href="html.index">Inicio</a>
-            <a href="menu.html">Menú online</a>
-            <a href="https://goo.gl/maps/Aft4wa9b7ci8ZXDM9" target="_blank">Cómo llegar</a>
-            <a href="contact.html">Contacto</a>
-            <!-- <a href="https://ig.me/m/lamaga_bar" target="_blank">Contacto</a> -->
-    </nav>
+    <nav></nav>
 
-    <main>
+    <main class="principal">
         <div id="insertInstagram"><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
         <div class="elfsight-app-b12dc19e-1103-4455-ade7-2949cdabd199"></div></div>
 
@@ -99,7 +75,6 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.26968414061648!2d-58.437072774530854!3d-34.59619670419149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb66f3c109bd%3A0xa7be817630ac7f02!2sLa%20Maga!5e0!3m2!1ses-419!2sar!4v1683588412523!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div> -->
 
-        
         <div class="botonMap">
             <p>Hacé click para ver el estado del tráfico en la zona</p>
             <button value="trafico" onclick="activarCapaDeTrafico()">Mostrar tráfico</button>
@@ -109,26 +84,12 @@
         <div id="map"></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBduAJoQywGe8ei-kpriTH_9iJImbn5wgE&callback=initMap&libraries=visualization" async defer></script>
     
-        
-        <!-- script JS -->
-        <script src="js/script.js"></script>
-    
     </main>
 
-    <footer>
-        <div class="rss">
-            <a href="https://www.instagram.com/lamaga_bar/">Instagram</a>
-            <a href="http://">Tik Tok</a>
-            <a href="http://">Facebook</a>
-        </div>
-            
-        <div class="legales">
-            legales de la página
+    <footer></footer>
 
-
-            Aguirre 686, Villa Crespo, Ciudad de Buenos Aires.
-            CP: 1069</div>
-    </footer>
-
+    <!-- script JS -->
+    <script src="js/script.js"></script>
+    <script src="js/headerFooter.js"></script>
 </body>
 </html>
