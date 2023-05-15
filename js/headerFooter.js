@@ -22,7 +22,7 @@ header.innerHTML = `<div class="marca">
 </div>
 `;
 
-nav.innerHTML = `<a href="/">Inicio</a>
+nav.innerHTML = `<a href="./index.html">Inicio</a>
 <a href="menu.html">Menú online</a>
 <a href="comollegar.html">Cómo llegar</a>
 <a href="contact.html">Contacto</a>
