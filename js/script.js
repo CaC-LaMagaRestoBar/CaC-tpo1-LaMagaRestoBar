@@ -47,6 +47,9 @@ async function getForecast() {
 getForecast(); //FIN API clima
 
 
+
+
+
 //INICIO API trafico
 let map;
 
@@ -65,11 +68,75 @@ const magaMarker = new google.maps.Marker({
 
 };
 
-marker.addListener('click', function() {
-  window.open('https://www.google.com/maps?ll=-34.596145,-58.437147&z=20&t=m&hl=es-419&gl=US&mapclient=apiv3&cid=12087240794531725058', '_blank');
-});
-
 function activarCapaDeTrafico() {
   const trafficLayer = new google.maps.TrafficLayer();
   trafficLayer.setMap(map);
 } //FIN API trafico
+
+
+
+
+
+//Validación formulario
+
+const form = document.getElementById('form');
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const comentario = document.getElementById('comentario');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  validateInputs();
+});
+
+const setError = (element, mensaje) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = mensaje;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+}
+
+const setSuccess = element => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+  const nombreValue = nombre.value.trim();
+  const emailValue = email.value.trim();
+  const comentarioValue = comentario.value.trim();
+  
+  if(nombreValue === '') {
+    setError(nombre, 'Nombre es necesario');
+  } else {
+    setSuccess(nombre);
+  }
+
+  if(emailValue === '') {
+    setError(email, 'Email es necesario');
+      } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Ingresa un email válido')
+      } else {
+        setSuccess(email);
+    }
+
+  if(comentarioValue === '') {
+    setError(comentario, 'No ingresaste ninguna consulta');
+    } else if(comentarioValue.length <= 10) {
+      setError(comentario, 'Escribe una consulta más larga');
+    } else {
+      setSuccess(comentario);
+    }
+  }//FIN Validación formulario

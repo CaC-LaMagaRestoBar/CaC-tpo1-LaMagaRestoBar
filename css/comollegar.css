@@ -1,0 +1,14 @@
+.principalComoLlegar {
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    height: 30vw;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.mapaComoLlegar {
+    /* grid-row: 1 / 1;
+    grid-column: 1 / 1; */
+    /* width: 100%; */
+}

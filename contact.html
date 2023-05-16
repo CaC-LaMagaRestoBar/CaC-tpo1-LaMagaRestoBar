@@ -6,37 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>La Maga Resto Bar: Contacto</title>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header></header>
     <nav></nav>    
     <main>
         <div class="container">
-            <form>
-                <div>
-                    <label for="nombreInput">Nombre</label>
-                    <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+            <form id="form">
+                <h2>Formulario de contacto</h2>
+                
+                <div class="input-control">
+                    <label for="nombre" class="">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <div class="error"></div>
+                </div>
+                
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
                 </div>
 
-                <div>
-                    <label for="emailInput">Email</label>
-                    <input type="email" id="emailInput" placeholder="Escribe tu email">
+                <div class="input-control">
+                    <label for="comentario">Consulta</label>                   
+                    <textarea name="comentario" id="comentario" rows="10"></textarea>
+                    <div class="error"></div>
                 </div>
-
-                <div>
-                    <label for="textComentario"></label>Comentario                   
-                    <textarea name="comentario" id="textComentario" cols="30" rows="10" placeholder="Escribe tu consulta o comentario"></textarea>
-                </div>
-
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-                </form>
-            </div>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     
     <footer></footer>
