@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,23 +23,27 @@
                 
                 <div class="input-control">
                     <label for="nombre" class="">Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" oninput="validateInputs()" placeholder="Ingresa tu nombre">
                     <div class="error"></div>
                 </div>
                 
                 <div class="input-control">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" oninput="validateInputs()" placeholder="Ingresa tu email">
                     <div class="error"></div>
                 </div>
 
                 <div class="input-control">
                     <label for="comentario">Consulta</label>                   
-                    <textarea name="comentario" id="comentario" rows="10"></textarea>
+                    <textarea name="comentario" id="comentario" rows="10" oninput="validateInputs()" placeholder="Ingresa tu consulta"></textarea>
                     <div class="error"></div>
                 </div>
             
-                <button type="submit">Enviar</button>
+                <div id="popUp">
+                    <button type="submit" id="enviar" disabled>Enviar</button>
+                    <span id="myPopUp">¡Formulario enviado!</span>
+                    <input type="hidden" name="_subject" value="Contacto La Maga">
+                </div>
             </form>
         </div>
     </main>

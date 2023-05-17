@@ -4,7 +4,7 @@ const footer = document.querySelector('footer');
 
 header.innerHTML = `<div class="marca">
 <div class="logotipo">
-    <img src="img/marca-removebg-preview2.png" alt="logotipo La Maga Resto Bar">
+    <a href="./index.html"><img src="img/marca-removebg-preview2.png" alt="logotipo La Maga Resto Bar"></a>
 </div>
 <div class="cabecera">
     <h1>La Maga Resto Bar</h1>

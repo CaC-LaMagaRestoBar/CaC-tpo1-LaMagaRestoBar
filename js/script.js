@@ -87,7 +87,8 @@ const comentario = document.getElementById('comentario');
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  validateInputs();
+  showPopUp();
+  refreshForm();
 });
 
 const setError = (element, mensaje) => {
@@ -106,7 +107,7 @@ const setSuccess = element => {
   errorDisplay.innerText = '';
   inputControl.classList.add('success');
   inputControl.classList.remove('error');
-};
+}
 
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -134,9 +135,36 @@ const validateInputs = () => {
 
   if(comentarioValue === '') {
     setError(comentario, 'No ingresaste ninguna consulta');
-    } else if(comentarioValue.length <= 10) {
+    } else if(comentarioValue.length < 15) {
       setError(comentario, 'Escribe una consulta más larga');
     } else {
       setSuccess(comentario);
     }
+
+  if(nombreValue != '' && (isValidEmail(emailValue)) && (comentarioValue.length > 14)) {
+    document.getElementById('enviar').classList.add('activado');
+    document.getElementById('enviar').classList.remove('desactivado');
+    document.getElementById('enviar').disabled = false;
+  } else {
+    document.getElementById('enviar').classList.add('desactivado');
+    document.getElementById('enviar').classList.remove('activado');
+    document.getElementById('enviar').disabled = true;
+  }
+
+
+
   }//FIN Validación formulario
+
+//PopUp fomulario enviado luego de ENVIAR
+function showPopUp() {
+  var popup = document.getElementById("myPopUp");
+  popup.classList.toggle("mostrar");
+}
+
+//Refresh formulario luego de ENVIAR
+const refreshForm = function () {
+  setTimeout(function() {
+    location.reload();
+  }, 2500);
+}
+
