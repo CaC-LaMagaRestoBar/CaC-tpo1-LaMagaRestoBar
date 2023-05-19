@@ -168,3 +168,12 @@ const refreshForm = function () {
   }, 2500);
 }
 
+//mostrar ocultar items del menú
+function mostrar(seccion) {
+  document.getElementById('sandwiches').style.display = 'none';
+  document.getElementById('postres').style.display = 'none';
+  document.getElementById('tortas').style.display = 'none';
+  document.getElementById('infusiones').style.display = 'none';
+  document.getElementById('tragos').style.display = 'none';
+  document.getElementById(seccion).style.display = 'block';
+}

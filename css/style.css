@@ -6,10 +6,12 @@ html {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
     opacity: 1;
-    background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #040404, #040404 50%, #000000 50%);
+    background-image: radial-gradient( ellipse farthest-corner at 4px 4px , #050505, #050505 50%, #000000 50%);
     background-size: 4px 4px;
 }
 
+
+/* =========== cabecera */
 .marca {
     display: grid;
     grid-template-columns: 1fr 3fr 1.3fr;
@@ -28,11 +30,18 @@ html {
 
 .cabecera h3 {
     font-size: 2rem;
-    margin: 0 0 0 0;
+    margin: 0 0 1rem 0;
+}
+
+.logotipo {
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 .logotipo img {
     width: 20rem;
+    justify-content: center;
 }
 
 .direccion {
@@ -62,6 +71,10 @@ html {
     }
 }
 
+/* fin cabecera */
+
+
+/* ============ barra de navegación y footer */
 nav {
     background-color: firebrick;
     display: grid;
@@ -89,7 +102,12 @@ nav a:hover, .rss a:hover {
     text-decoration: underline;
     background-color: rgb(122, 20, 20);
 }
+/* fin nav y footer */
 
+
+
+
+/* =========== main */
 .mainIndex {
     display: grid;
     grid-template-rows: 0.52fr 0.85fr 0.52fr 2fr;
@@ -97,6 +115,15 @@ nav a:hover, .rss a:hover {
     gap: 0.2rem;
 }
 
+#insertInstagram {
+    width: 100%;
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+}
+
+
+
+/* ==== clima */
 .tituloClima {
     display: flex;
     justify-content: center;
@@ -148,7 +175,7 @@ nav a:hover, .rss a:hover {
 .forecast-column img.icon {
     width: 6rem;
     height: 6rem;
-    margin: -1.2rem 0 -1rem 0;
+    margin: -1.2rem 0 0rem 0;
   }
   
 .forecast-column p {
@@ -156,11 +183,6 @@ nav a:hover, .rss a:hover {
     font-size: 1rem;
   }
 
-#insertInstagram {
-    width: 100%;
-    grid-row: 1 / 5;
-    grid-column: 1 / 2;
-}
 
 .botonMap {
     grid-row: 3 / 3 ;
@@ -199,17 +221,32 @@ nav a:hover, .rss a:hover {
     html {
         font-size: 8px;
     }
+
+    .mainIndex {
+        grid-template-rows: 0.52fr 0.85fr 0.52fr 2fr;
+        grid-template-columns: 3fr 2fr;
+        gap: 0.2rem;
+    }
+
+    .marca {
+        grid-template-columns: 1fr;
+    }
+    .direccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     html {
-        font-size: 7px;
+        font-size: 8px;
     }
     
     .mainIndex {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 4fr 0.5fr 1fr 0.5fr 3fr;
+        grid-template-rows: 5fr 1fr 1fr 1fr 5fr;
     }
 
     #insertInstragram, .tituloClima, .forecast-container, #map, .botonMap {
@@ -221,13 +258,5 @@ nav a:hover, .rss a:hover {
     .forecast-container {display: flex;grid-row: 3 / 3;}
     .botonMap {grid-row: 4 / 4;}
     #map {grid-row: 5 / 5;}
-
-    .marca {
-        grid-template-columns: 1fr;
-    }
-    .direccion {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     
 }

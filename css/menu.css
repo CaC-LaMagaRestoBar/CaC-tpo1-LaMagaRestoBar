@@ -1,7 +1,66 @@
-/* menu.html */
-.menuColumnas {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+w/* menu.html */
+.menuSecciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: whitesmoke;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.menuSecciones li {
+    display: inline-flex;
+    border: 0.2rem whitesmoke solid;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: auto;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.container-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-menu li {
+    color: whitesmoke;
+    list-style-type: none;
+    border: 0.2rem whitesmoke solid;
+    max-width: 40rem;
+    max-height: 20rem;
+    padding: 0.5rem;
+}
+
+li:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+}
+
+.container-menu img {
+    max-width: 20rem;
+    max-height: 20rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.container-menu h3 {
+    display: inline;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.container-menu h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container-menu p {
+    font-size: 1.2rem;
 }
