@@ -28,17 +28,23 @@ nav.innerHTML = `<a href="./index.html">Inicio</a>
 <a href="contact.html">Contacto</a>
 `;
 
-footer.innerHTML = `<div class="rss">
-<a href="https://www.instagram.com/lamaga_bar/">Instagram</a>
-<a href="http://">Tik Tok</a>
-<a href="http://">Facebook</a>
+footer.innerHTML = `<div class="footer">
+<div class="footerLogo">
+    <a href="./index.html"><img src="img/marca-removebg-preview2.png" alt="logotipo La Maga Resto Bar"></a>
 </div>
 
 <div class="legales">
-legales de la página
-
-
-Aguirre 686, Villa Crespo, Ciudad de Buenos Aires.
-CP: 1069
+    <p>La Maga Resto Bar</p>
+    <p>Aguirre 686</p>
+    <p>Villa Crespo, Ciudad de Buenos Aires</p>
+    <p>contacto@lamagarestobar.com</p>
+    <p>Todos los derechos reservados</p>
 </div>
-`;
+
+<div class="redes">
+    <h3>Siguenos en:</h3>
+    <a href="https://www.instagram.com/lamaga_bar/"><img src="img/rss-instagram.png" alt=""> Instagram</a>
+    <a href="https://www.tiktok.com"><img src="img/rss-tik-tok.png" alt=""> Tik Tok</a>
+    <a href="https://www.facebook.com"><img src="img/rss-facebook.png" alt=""> Facebook</a>
+</div>
+</div>`;

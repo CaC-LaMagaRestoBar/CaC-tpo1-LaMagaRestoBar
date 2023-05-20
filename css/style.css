@@ -57,7 +57,7 @@ html {
     margin-bottom: -1.6rem;
 }
 
-.direccion img:hover, .logotipo img:hover, .indicaciones img:hover {
+.direccion img:hover, .logotipo img:hover, .indicaciones img:hover, .footerLogo img:hover, .redes a:hover {
     animation: shake 0.1s linear;
     animation-duration: 0.5s;
 }
@@ -74,7 +74,7 @@ html {
 /* fin cabecera */
 
 
-/* ============ barra de navegación y footer */
+/* ============ barra de navegación */
 nav {
     background-color: firebrick;
     display: grid;
@@ -82,13 +82,7 @@ nav {
     margin-bottom: 1px;
 }
 
-.rss {
-    background-color: firebrick;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-nav a, .rss a {
+nav a {
     padding: 1rem;
     color: whitesmoke;
     text-decoration: none;
@@ -98,11 +92,61 @@ nav a, .rss a {
     transition: 0.5s;
 }
 
-nav a:hover, .rss a:hover {
+nav a:hover {
     text-decoration: underline;
     background-color: rgb(122, 20, 20);
 }
-/* fin nav y footer */
+/* fin nav */
+
+
+
+
+/* ==== footer ==== */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: firebrick;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    color: whitesmoke;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.footerLogo img {
+    width: 10rem;
+}
+
+.legales {
+    border-left: 0.1rem whitesmoke solid;
+    border-right: 0.1rem whitesmoke solid;
+    padding: 1rem;
+}
+
+.legales p {
+    margin: 0.2rem 0 0.2rem 0;
+}
+
+.redes img {
+    width: 2rem;    
+}
+
+.redes a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+
+}
+
+.redes h3 {
+    display: block;
+    
+    margin: 0 0 0 0;
+}
 
 
 
