@@ -8,7 +8,7 @@ header.innerHTML = `<div class="marca">
 </div>
 <div class="cabecera">
     <h1>La Maga Resto Bar</h1>
-    <h3>Desayunos | Brunch | Almuerzos | Gourmet | Meriendas | Tortas</h3>
+    <blockquote>"Pero no se podía hacer otra cosa que mirar a la Maga tan hermosa al borde de la rayuela, y desear que impulsara el tejo de una casilla a otra, de la tierra al Cielo". Julio Cortázar</blockquote>    
 </div>
 
 <div class="direccion">

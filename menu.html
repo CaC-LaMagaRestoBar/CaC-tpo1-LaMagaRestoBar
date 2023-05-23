@@ -18,7 +18,10 @@
     
     <main>
         <ul class="menuSecciones">
+            <li onclick="mostrar('brunchs')">Brunchs</li>
+            <li onclick="mostrar('desayunos')">Desayunos y meriendas</li>
             <li onclick="mostrar('sandwiches')">Sandwiches</li>
+            <li onclick="mostrar('ensaladas')">Ensaladas</li>
             <li onclick="mostrar('postres')">Postres</li>
             <li onclick="mostrar('tortas')">Tortas</li>
             <li onclick="mostrar('tragos')">Tragos</li>
@@ -26,50 +29,28 @@
 
         
         <div class="container-menu">
-            <section id="sandwiches">
-                <fieldset>
-                    <legend>
-                        <h2>Sandwiches</h2>
-                    </legend>
-                
-                <ul>
-                    <li>
-                        <img src="img\menu\SandwichTGS.webp" alt="">
-                        <h3>Sandwich TGS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
+            <fieldset id="brunchs">
+                <legend>Brunchs</legend>
+                <small>(Incluye café con leche, té o limonada)</small>
+                <ul id="insertBrunch"></ul>
+            </fieldset>
 
-                    <li>
-                        <img src="img\menu\SandwichCroissant.webp" alt="">
-                        <h3>Croissant Sandwich</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
+            <fieldset id="desayunos">
+                <legend>Desayunos y meriendas</legend>
+                <small>(Incluye café con leche, té o limonada)</small>
+                <ul id="insertDesayuno"></ul>
+            </fieldset>
 
-                    <li>
-                        <img src="img/menu/SandwichDonOsvaldo.webp" alt="">
-                        <h3>Don Osvaldo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
+            <fieldset id="sandwiches">
+                <legend>Sandwiches</legend>
+                <small>(Acompañados de papas fritas)</small>
+                <ul id="insertSandwich"></ul>
+            </fieldset>
 
-                    <li>
-                        <img src="img/menu/SandwichCroqueMadam.webp" alt="">
-                        <h3>Croque Madame</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
-
-                    <li>
-                        <img src="img/menu/SandwichDonOtto.webp" alt="">
-                        <h3>Don Otto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
-
-                    <li>
-                        <img src="img/menu/SandwichHotPastrami.jpg" alt="">
-                        <h3>Hot Pastrami</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis reiciendis neque iusto repellendus non, temporibus eius totam est nulla excepturi quam voluptatum, autem sunt rerum ad ullam inventore magnam?</p>
-                    </li>
-                </ul></fieldset>
-            </section>
+            <fieldset id="ensaladas">
+                <legend>Ensaladas</legend>
+                <ul id="insertEnsaladas"></ul>
+            </fieldset>
 
             <section id="postres">
                 <fieldset>
@@ -170,6 +151,85 @@
 
     <script src="js/script.js"></script>
     <script src="js/headerFooter.js"></script>
+
+    
+
+
+    <!-- Script para insertar los elementos del menú desde un JSON -->
+    <!-- Esto debería estar dentro de script.js pero desconozco la razón por la cual no funcionaba cuando lo escribía ahí y si acá. No era un probelam de ./ o ../ -->
+    <script>
+
+        const insertBrunch = document.getElementById('insertBrunch');
+        fetch ('json/brunch.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertBrunch.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p>Contiene: ${post.ingredientes}</p>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+
+        const insertDesayuno = document.getElementById('insertDesayuno');
+        fetch ('json/desayuno.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertDesayuno.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p>Contiene: ${post.ingredientes}</p>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+        const insertSandwich = document.getElementById('insertSandwich');
+        fetch ('json/sandwich.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertSandwich.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p>Contiene: ${post.ingredientes}</p>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+        const insertEnsaladas = document.getElementById('insertEnsaladas');
+        fetch ('json/ensaladas.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertEnsaladas.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p>Contiene: ${post.ingredientes}</p>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+
+    </script>
 
 </body>
 </html>

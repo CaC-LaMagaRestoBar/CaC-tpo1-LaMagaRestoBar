@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sandwich TGS",
+        "img": "img/menu/SandwichTGS.webp",
+        "ingredientes": "Pan de molde de masa madre, batido de palta, rúcula, huevos revueltos, pickles de cebolla, nueces caramelizadas.",
+        "precio": 1740
+    },
+    {
+        "id": 2,
+        "nombre": "Bohemio",
+        "img": "img/menu/SandwichCroissant.webp",
+        "ingredientes": "Croissant con jamón cocido y queso + mini exprimido de naranja",
+        "precio": 1460
+    },
+    {
+        "id": 3,
+        "nombre": "Don Osvaldo",
+        "img": "img/menu/SandwichDonOsvaldo.webp",
+        "ingredientes": "Jamón crudo, queso y tomate en baguetín",
+        "precio": 1300
+    },
+    {
+        "id": 4,
+        "nombre": "Croque Madam",
+        "img": "img/menu/SandwichCroqueMadam.webp",
+        "ingredientes": "Pan de molde gratinado, salsa bechamel, jamón, queso gruyere y huevo",
+        "precio": 1860
+    },
+    {
+        "id": 5,
+        "nombre": "Don Otto",
+        "img": "img/menu/SandwichDonOtto.webp",
+        "ingredientes": "Lewerbush, pepinos agridulces, mostacrem en pan multicereal",
+        "precio": 1280
+    },
+    {
+        "id": 6,
+        "nombre": "Neoyorquino",
+        "img": "img/menu/SandwichHotPastrami.jpg",
+        "ingredientes": "Bagel, Hot Pastrami, pepinos agridulces, cebolla caramelizada, salsa mostanesa",
+        "precio": 2700
+    },
+    {
+        "id": 7,
+        "nombre": "Sandwich Veggie",
+        "img": "img/menu/SandwichVeggie.webp",
+        "ingredientes": "pan de ciabatta de masa madre, queso crema con cibullet, mix de hojas verdes, rodajas de tomate, queso brie, aceitunas negras.",
+        "precio": 1740
+    },
+    {
+        "id": 8,
+        "nombre": "Tía Lita",
+        "img": "img/menu/SandwichLaTiaLita.jpg",
+        "ingredientes": "Ciabatta de pechuguitas grillé al limón con mouse de palta, queso en hebras y lechugas tricolor.",
+        "precio": 2000
+    },
+    {
+        "id": 9,
+        "nombre": "Proteo",
+        "img": "img/menu/SandwichProteo.jpg",
+        "ingredientes": "Bagel con salmón ahumado, queso crema, alcaparras y rúcula.",
+        "precio": 2240
+    }
+
+
+
+    
+]

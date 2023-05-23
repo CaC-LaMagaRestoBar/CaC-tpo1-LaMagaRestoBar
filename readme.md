@@ -1,4 +1,4 @@
-El sitio web está realizado para 'La Maga Resto Bar', que es un local gastronómico ubicado en el barrio de Villa Crespo, en la Ciudad de Buenos Aires, y que pertenece a un familiar de un integrante del grupo y nos permitió realizar dicho proyecto.
+El sitio web está realizado para 'La Maga Resto Bar', un local gastronómico ubicado en el barrio de Villa Crespo, en la Ciudad de Buenos Aires, y que pertenece a un familiar de un integrante del grupo y nos permitió realizar dicho proyecto.
 
 
 Integrantes del grupo: 

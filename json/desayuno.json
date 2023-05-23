@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "categoria": "desayuno",
+        "nombre": "Naturaleza",
+        "img": "img/menu/",
+        "precio": "2600",
+        "ingredientes": "Yogur natural, granola de avena, frutos secos y coco rallado, frutas de estación, queso dambo "
+    },
+    {
+        "id": "2",
+        "categoria": "desayuno",
+        "nombre": "Atália",
+        "img": "img/menu/DesayunoAtalia.webp",
+        "precio": "2200",
+        "ingredientes": "Tostada de pan de masa madre con mix de semillas, queso crema, rúcula, tomates confitados, huevos revueltos, panceta"
+    },
+    {
+        "id": "3",
+        "categoria": "desayuno",
+        "nombre": "Bohemio",
+        "img": "img/menu/",
+        "precio": "1460",
+        "ingredientes": "Croissant con jamón cocido y queso naranja"
+    },
+    {
+        "id": "4",
+        "categoria": "desayuno",
+        "nombre": "Del Cielo",
+        "img": "img/menu/",
+        "precio": "1200",
+        "ingredientes": "Dos medias lunas"
+    },
+    {
+        "id": "5",
+        "categoria": "desayuno",
+        "nombre": "Rayuela",
+        "img": "img/menu/",
+        "precio": "1400",
+        "ingredientes": "Tostadas con dips de queso crema y dulce"
+    },
+    {
+        "id": "6",
+        "categoria": "desayuno",
+        "nombre": "Edith",
+        "img": "img/menu/",
+        "precio": "1400",
+        "ingredientes": "Tostado de jamón y queso"
+    }
+]

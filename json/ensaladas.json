@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "categoria": "ensaladas",
+        "nombre": "Italiana",
+        "img": "img/menu/",
+        "precio": 1700,
+        "ingredientes": "Mozzarella, tomates cherry, albahaca, rúcula, olivas negras, semillas y crotones"
+    },
+    {
+        "id": 2,
+        "categoria": "ensaladas",
+        "nombre": "César",
+        "img": "img/menu/",
+        "precio": 1360,
+        "ingredientes": "Mix de hojas verdes, queso parmesano, pollo grillé al limón, crotones"
+    },
+    {
+        "id": 3,
+        "categoria": "ensaladas",
+        "nombre": "Marroquí",
+        "img": "img/menu/",
+        "precio": 1360,
+        "ingredientes": "Mix de hojas verdes, tomates trozados, atún y olivas negras"
+    },
+    {
+        "id": 4,
+        "categoria": "ensaladas",
+        "nombre": "Sueca",
+        "img": "img/menu/",
+        "precio": 2200,
+        "ingredientes": "Salmón ahumado, queso brie, mix de hojas verdes, tomates confitados y alcaparras"
+    }
+]

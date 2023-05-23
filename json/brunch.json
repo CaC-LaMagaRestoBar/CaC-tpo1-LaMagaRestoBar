@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "categoria": "brunchs",
+        "nombre": "La Maga",
+        "img": "img/menu/",
+        "precio": 3600,
+        "ingredientes": "Tostadas,  jamón cocido, queso dambo, dips de queso crema y dulce, huevos revueltos, frutas de estación + budín + exprimido de naranja"
+    },
+    {
+        "id": 2,
+        "categoria": "brunchs",
+        "nombre": "American way",
+        "img": "img/menu/",
+        "precio": 3600,
+        "ingredientes": "Huevos revueltos, panceta, tostadas con dips de queso crema y dulce natural, croissant de jamón y queso, frutas de estación, alfajorcitos de maicena + exprimido de naranja"
+    }
+]

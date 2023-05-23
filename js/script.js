@@ -170,9 +170,16 @@ const refreshForm = function () {
 
 //mostrar ocultar secciones del menú
 function mostrar(seccion) {
+  document.getElementById('brunchs').style.display = 'none';
+  document.getElementById('desayunos').style.display = 'none';
   document.getElementById('sandwiches').style.display = 'none';
+  document.getElementById('ensaladas').style.display = 'none';
   document.getElementById('postres').style.display = 'none';
   document.getElementById('tortas').style.display = 'none';
   document.getElementById('tragos').style.display = 'none';
   document.getElementById(seccion).style.display = 'block';
+}
+
+function marcar(marcado) {
+  document
 }
