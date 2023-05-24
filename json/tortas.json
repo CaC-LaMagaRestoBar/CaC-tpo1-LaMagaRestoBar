@@ -8,14 +8,6 @@
         "ingredientes": ""
     },
     {
-        "id": 2,
-        "categoria": "tortas",
-        "nombre": "Cheesecake Maracuya",
-        "img": "",
-        "precio": 980,
-        "ingredientes": ""
-    },
-    {
         "id": 3,
         "categoria": "tortas",
         "nombre": "Cheesecake Frutos rojos",

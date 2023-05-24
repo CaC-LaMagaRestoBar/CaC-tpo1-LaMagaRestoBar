@@ -3,7 +3,7 @@
         "id": 1,
         "categoria": "ensaladas",
         "nombre": "Italiana",
-        "img": "img/menu/",
+        "img": "img/menu/EnsaladaItaliana.jpg",
         "precio": 1700,
         "ingredientes": "Mozzarella, tomates cherry, albahaca, rúcula, olivas negras, semillas y crotones"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "categoria": "ensaladas",
         "nombre": "Marroquí",
-        "img": "img/menu/",
+        "img": "img/menu/EnsaladaMarroqui.jpg",
         "precio": 1360,
         "ingredientes": "Mix de hojas verdes, tomates trozados, atún y olivas negras"
     },
@@ -30,5 +30,13 @@
         "img": "img/menu/EnsaladaSueca.webp",
         "precio": 2200,
         "ingredientes": "Salmón ahumado, queso brie, mix de hojas verdes, tomates confitados y alcaparras"
+    },
+    {
+        "id": 5,
+        "categoria": "ensaladas",
+        "nombre": "De frutas",
+        "img": "img/menu/EnsaladaDeFrutas.webp",
+        "precio": 1000,
+        "ingredientes": "Mix de frutas de estación"
     }
 ]
