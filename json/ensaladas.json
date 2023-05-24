@@ -35,7 +35,7 @@
         "id": 5,
         "categoria": "ensaladas",
         "nombre": "De frutas",
-        "img": "img/menu/EnsaladaDeFrutas.webp",
+        "img": "img/menu/EnsaladasDeFrutas.webp",
         "precio": 1000,
         "ingredientes": "Mix de frutas de estación"
     }

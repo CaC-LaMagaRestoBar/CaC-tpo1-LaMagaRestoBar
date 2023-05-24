@@ -43,7 +43,7 @@
         "id": 7,
         "categoria": "tragos",
         "nombre": "Fernet-Cola",
-        "img": "",
+        "img": "img/menu/fernet.webp",
         "precio": 1200,
         "ingredientes": ""
     },
@@ -75,7 +75,7 @@
         "id": 11,
         "categoria": "tragos",
         "nombre": "Daiquiri de frutilla",
-        "img": "",
+        "img": "img/menu/daiquirifrutilla.jpg",
         "precio": 1280,
         "ingredientes": ""
     },
@@ -83,7 +83,7 @@
         "id": 12,
         "categoria": "tragos",
         "nombre": "Daiquiri de durazno",
-        "img": "",
+        "img": "img/menu/daiquiridurazno.jpg",
         "precio": 1280,
         "ingredientes": ""
     },
@@ -91,7 +91,7 @@
         "id": 13,
         "categoria": "tragos",
         "nombre": "Vermouth Rosso",
-        "img": "",
+        "img": "img/menu/vermuth.jpg",
         "precio": 940,
         "ingredientes": ""
     },
@@ -99,7 +99,7 @@
         "id": 14,
         "categoria": "tragos",
         "nombre": "Copa de vino",
-        "img": "",
+        "img": "img/menu/vino.jpg",
         "precio": 840
     }
 ]
