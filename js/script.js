@@ -171,6 +171,7 @@ const refreshForm = function () {
 //mostrar ocultar secciones del menú
 function mostrar(seccion) {
   document.getElementById('brunchs').style.display = 'none';
+  document.getElementById('croissants').style.display='none';
   document.getElementById('desayunos').style.display = 'none';
   document.getElementById('sandwiches').style.display = 'none';
   document.getElementById('ensaladas').style.display = 'none';

@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "categoria": "croissants",
+      "nombre": "Croissant relleno 1",
+      "precio": "580",
+      "ingredientes": "Jamón cocido y queso"
+    },
+    {
+      "id": "2",
+      "categoria": "croissants",
+      "nombre": "Croissant relleno 2",
+      "precio": "1200",
+      "ingredientes": "Salmon ahumado, palta, rucula y queso blanco"
+    },
+    {
+      "id": "3",
+      "categoria": "croissants",
+      "nombre": "Croissant relleno 3",
+      "precio": "880",
+      "ingredientes": "Jamon crudo, queso azul, cherry y rucula"
+    },
+    {
+      "id": "4",
+      "categoria": "croissants",
+      "nombre": "Croissant relleno 4",
+      "precio": "880",
+      "ingredientes": "Huevos revueltos, espinaca y parmesano"
+    }
+  ]

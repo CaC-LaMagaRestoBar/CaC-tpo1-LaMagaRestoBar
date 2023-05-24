@@ -19,6 +19,7 @@
     <main>
         <ul class="menuSecciones">
             <li onclick="mostrar('brunchs')">Brunchs</li>
+            <li onclick="mostrar('croissants')">Croissants</li>
             <li onclick="mostrar('desayunos')">Desayunos y meriendas</li>
             <li onclick="mostrar('sandwiches')">Sandwiches</li>
             <li onclick="mostrar('ensaladas')">Ensaladas</li>
@@ -32,6 +33,10 @@
             <fieldset id="brunchs"><legend>Brunchs</legend>
                 <small>(Incluye café con leche, té o limonada)</small>
                 <ul id="insertBrunch"></ul>
+            </fieldset>
+            <fieldset id="croissants"><legend>Croissants</legend>
+                <ul id="insertCroissants"></ul>
+
             </fieldset>
 
             <fieldset id="desayunos"><legend>Desayunos y meriendas</legend>
@@ -83,6 +88,22 @@
             console.log(data);
             data.forEach(post => {
                 insertBrunch.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p>Contiene: ${post.ingredientes}</p>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+        const insertCroissants = document.getElementById('insertCroissants');
+        fetch ('json/croissants.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertCroissants.insertAdjacentHTML('beforeend', `
                 <li>
                     <img src="${post.img}" alt="">
                     <h3>${post.nombre}</h3>
