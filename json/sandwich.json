@@ -9,7 +9,7 @@
     {
         "id": 2,
         "nombre": "Bohemio",
-        "img": "img/menu/SandwichCroissant.webp",
+        "img": "img/menu/bohemio.jpg",
         "ingredientes": "Croissant con jamón cocido y queso + mini exprimido de naranja",
         "precio": 1460
     },
