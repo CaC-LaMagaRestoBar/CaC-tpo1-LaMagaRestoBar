@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "categoria": "tortas",
+        "nombre": "Red Velvet",
+        "img": "img/menu/TortasRedVelvet.webp",
+        "precio": 960,
+        "ingredientes": ""
+    },
+    {
+        "id": 2,
+        "categoria": "tortas",
+        "nombre": "Cheesecake Maracuya",
+        "img": "",
+        "precio": 980,
+        "ingredientes": ""
+    },
+    {
+        "id": 3,
+        "categoria": "tortas",
+        "nombre": "Cheesecake Frutos rojos",
+        "img": "img/menu/TortasCheesecakeFrutosRojos.png",
+        "precio": 980,
+        "ingredientes": ""
+    },
+    {
+        "id": 4,
+        "categoria": "tortas",
+        "nombre": "Tiramisú",
+        "img": "img/menu/TortasTiramisu.webp",
+        "precio": 960,
+        "ingredientes": ""
+    },
+    {
+        "id": 5,
+        "categoria": "tortas",
+        "nombre": "Chocotorta",
+        "img": "img/menu/TortasChocotorta.webp",
+        "precio": 960,
+        "ingredientes": ""
+    },
+    {
+        "id": 6,
+        "categoria": "tortas",
+        "nombre": "Brownie",
+        "img": "img/menu/TortasBrownie.webp",
+        "precio": 740
+    }
+]

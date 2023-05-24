@@ -22,15 +22,15 @@
     color: whitesmoke;
     padding: 0.5rem;
     cursor: pointer;
-    width: 187px;
+    width: 165px;
     list-style-type: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     justify-content: center;
     margin-right: 0.3rem;
 }
 
 .menuSecciones li:hover {
-    scale: 1.1;
+    scale: 1.08;
 }
 
 .container-menu ul {
@@ -42,6 +42,7 @@
 }
 
 .container-menu li {
+    position: relative;
     color: whitesmoke;
     list-style-type: none;
     border: 0.2rem whitesmoke solid;
@@ -51,7 +52,7 @@
 }
 
 li:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
 }
 
 .container-menu img {
@@ -85,7 +86,11 @@ legend {
 }
 
 .precioMenu {
-    float: right;
+    /* float: right; */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 1rem;
     }
 
 small {

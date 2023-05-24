@@ -58,7 +58,7 @@
     {
         "id": 9,
         "nombre": "Proteo",
-        "img": "img/menu/SandwichProteo.jpg",
+        "img": "img/menu/",
         "ingredientes": "Bagel con salmón ahumado, queso crema, alcaparras y rúcula.",
         "precio": 2240
     }

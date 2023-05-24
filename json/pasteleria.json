@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "categoria": "pasteleria",
+        "nombre": "Budin de limón",
+        "img": "img/menu/PasteleriaBudinDeLimon.jpg",
+        "precio": 860,
+        "ingredientes": ""
+    },
+    {
+        "id": 2,
+        "categoria": "pasteleria",
+        "nombre": "Budín de naranja",
+        "img": "img/menu/PasteleriaBudinDeNaranja.webp",
+        "precio": 860,
+        "ingredientes": ""
+    },
+    {
+        "id": 3,
+        "categoria": "pasteleria",
+        "nombre": "Budín de zanahoria",
+        "img": "img/menu/",
+        "precio": 860,
+        "ingredientes": ""
+    },
+    {
+        "id": 4,
+        "categoria": "pasteleria",
+        "nombre": "Apple Crumble",
+        "img": "img/menu/",
+        "precio": 760,
+        "ingredientes": ""
+    },
+    {
+        "id": 5,
+        "categoria": "pasteleria",
+        "nombre": "Rolls de canela",
+        "img": "img/menu/PasteleriaRollsDeCanela.webp",
+        "precio": 740,
+        "ingredientes": ""
+    },
+    {
+        "id": 6,
+        "categoria": "pasteleria",
+        "nombre": "Alfajor de Nuez",
+        "img": "img/menu/PasteleriaAlfajorDeAlmendras.webp",
+        "precio": 640,
+        "ingredientes": ""
+    },
+    {
+        "id": 7,
+        "categoria": "pasteleria",
+        "nombre": "Alfajor de Chocolate",
+        "img": "img/menu/PasteleriaAlfajorDeChocolate.webp",
+        "precio": 680,
+        "ingredientes": ""
+    },
+    {
+        "id": 8,
+        "categoria": "pasteleria",
+        "nombre": "Scon de queso y hierbas",
+        "img": "img/menu/",
+        "precio": 740,
+        "ingredientes": ""
+    },
+    {
+        "id": 9,
+        "categoria": "pasteleria",
+        "nombre": "Croissants",
+        "img": "img/menu/",
+        "precio": 380,
+        "ingredientes": ""
+    },
+    {
+        "id": 10,
+        "categoria": "pasteleria",
+        "nombre": "Medialunas",
+        "img": "img/menu/PasteleriaMedialunas.jpg",
+        "precio": 220,
+        "ingredientes": ""
+    },
+    {
+        "id": 11,
+        "categoria": "pasteleria",
+        "nombre": "Medialuna con jamón y queso",
+        "img": "img/menu/",
+        "precio": 420
+    }
+]

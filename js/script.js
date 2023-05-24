@@ -1,5 +1,5 @@
 //INICIO API clima
-const API_KEY = '29ef2e122f9f4a999b1162401230905';
+const API_KEY = 'b3cae54015f1432c98d150552232305';
 const BASE_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&aqi=no&alerts=no`;
 
 const locationData = {
@@ -174,7 +174,7 @@ function mostrar(seccion) {
   document.getElementById('desayunos').style.display = 'none';
   document.getElementById('sandwiches').style.display = 'none';
   document.getElementById('ensaladas').style.display = 'none';
-  document.getElementById('postres').style.display = 'none';
+  document.getElementById('pasteleria').style.display = 'none';
   document.getElementById('tortas').style.display = 'none';
   document.getElementById('tragos').style.display = 'none';
   document.getElementById(seccion).style.display = 'block';

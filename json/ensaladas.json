@@ -11,7 +11,7 @@
         "id": 2,
         "categoria": "ensaladas",
         "nombre": "César",
-        "img": "img/menu/",
+        "img": "img/menu/EnsaladaCeasar.jpg",
         "precio": 1360,
         "ingredientes": "Mix de hojas verdes, queso parmesano, pollo grillé al limón, crotones"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "categoria": "ensaladas",
         "nombre": "Sueca",
-        "img": "img/menu/",
+        "img": "img/menu/EnsaladaSueca.webp",
         "precio": 2200,
         "ingredientes": "Salmón ahumado, queso brie, mix de hojas verdes, tomates confitados y alcaparras"
     }

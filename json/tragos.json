@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "categoria": "tragos",
+        "nombre": "Corona 269 ml",
+        "img": "img/menu/",
+        "precio": 680,
+        "ingredientes": ""
+    },
+    {
+        "id": 2,
+        "categoria": "tragos",
+        "nombre": "Corona 710 ml",
+        "img": "img/menu/",
+        "precio": 1200,
+        "ingredientes": ""
+    },
+    {
+        "id": 3,
+        "categoria": "tragos",
+        "nombre": "Andes  473 ml",
+        "img": "img/menu/",
+        "precio": 760,
+        "ingredientes": ""
+    },
+    {
+        "id": 4,
+        "categoria": "tragos",
+        "nombre": "Temple 473 m",
+        "img": "img/menu/",
+        "precio": 820,
+        "ingredientes": ""
+    },
+    {
+        "id": 5,
+        "categoria": "tragos",
+        "nombre": "Stella Artois 473 ml",
+        "img": "",
+        "precio": 760,
+        "ingredientes": ""
+    },
+    {
+        "id": 6,
+        "categoria": "tragos",
+        "nombre": "Gin Tonic",
+        "img": "img/menu/TragosGinTonic.webp",
+        "precio": 1180,
+        "ingredientes": ""
+    },
+    {
+        "id": 7,
+        "categoria": "tragos",
+        "nombre": "Fernet-Cola",
+        "img": "",
+        "precio": 1200,
+        "ingredientes": ""
+    },
+    {
+        "id": 8,
+        "categoria": "tragos",
+        "nombre": "Campari",
+        "img": "",
+        "precio": 1180,
+        "ingredientes": ""
+    },
+    {
+        "id": 9,
+        "categoria": "tragos",
+        "nombre": "Apperol",
+        "img": "img/menu/TragosApperol.webp",
+        "precio": 1300,
+        "ingredientes": ""
+    },
+    {
+        "id": 10,
+        "categoria": "tragos",
+        "nombre": "Cynar Juleps",
+        "img": "",
+        "precio": 1250,
+        "ingredientes": ""
+    },
+    {
+        "id": 11,
+        "categoria": "tragos",
+        "nombre": "Daiquiri de frutilla",
+        "img": "",
+        "precio": 1280,
+        "ingredientes": ""
+    },
+    {
+        "id": 12,
+        "categoria": "tragos",
+        "nombre": "Daiquiri de durazno",
+        "img": "",
+        "precio": 1280,
+        "ingredientes": ""
+    },
+    {
+        "id": 13,
+        "categoria": "tragos",
+        "nombre": "Vermouth Rosso",
+        "img": "",
+        "precio": 940,
+        "ingredientes": ""
+    },
+    {
+        "id": 14,
+        "categoria": "tragos",
+        "nombre": "Batido de Gancia",
+        "img": "",
+        "precio": 940,
+        "ingredientes": ""
+    },
+    {
+        "id": 15,
+        "categoria": "tragos",
+        "nombre": "Copa de vino",
+        "img": "",
+        "precio": 840
+    }
+]

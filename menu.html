@@ -22,128 +22,43 @@
             <li onclick="mostrar('desayunos')">Desayunos y meriendas</li>
             <li onclick="mostrar('sandwiches')">Sandwiches</li>
             <li onclick="mostrar('ensaladas')">Ensaladas</li>
-            <li onclick="mostrar('postres')">Postres</li>
-            <li onclick="mostrar('tortas')">Tortas</li>
+            <li onclick="mostrar('pasteleria')">Pastelería</li>
+            <li onclick="mostrar('tortas')">Tortas Individuales</li>
             <li onclick="mostrar('tragos')">Tragos</li>
         </ul>
 
         
         <div class="container-menu">
-            <fieldset id="brunchs">
-                <legend>Brunchs</legend>
+            <fieldset id="brunchs"><legend>Brunchs</legend>
                 <small>(Incluye café con leche, té o limonada)</small>
                 <ul id="insertBrunch"></ul>
             </fieldset>
 
-            <fieldset id="desayunos">
-                <legend>Desayunos y meriendas</legend>
+            <fieldset id="desayunos"><legend>Desayunos y meriendas</legend>
                 <small>(Incluye café con leche, té o limonada)</small>
                 <ul id="insertDesayuno"></ul>
             </fieldset>
 
-            <fieldset id="sandwiches">
-                <legend>Sandwiches</legend>
+            <fieldset id="sandwiches"><legend>Sandwiches</legend>
                 <small>(Acompañados de papas fritas)</small>
                 <ul id="insertSandwich"></ul>
             </fieldset>
 
-            <fieldset id="ensaladas">
-                <legend>Ensaladas</legend>
+            <fieldset id="ensaladas"><legend>Ensaladas</legend>
                 <ul id="insertEnsaladas"></ul>
             </fieldset>
 
-            <section id="postres">
-                <fieldset>
-                    <legend>
-                        <h2>Postres</h2>
-                    </legend>
-                    <ul>
-                        <li>
-                            <img src="img/menu/PostresRedVelvet.webp" alt="">
-                            <h3>Red Velvet</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/PostresChesscake.png" alt="">
-                            <h3>Chesscake</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/PostresTiramisu.webp" alt="">
-                            <h3>Tiramisú</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/PostresChocotorta.webp" alt="">
-                            <h3>Chocotorta</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                            <h3>Chocotorta Con Nutella</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                            <h3>Black Mamba</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                    </ul>
-                </fieldset>
-            </section>
-            
-            <section id="tortas">
-                <fieldset>
-                    <legend><h2>Tortas</h2></legend>
-                    <ul>
-                        <li>
-                            <img src="img/menu/TortasBudinDeNaranja.webp" alt="">
-                            <h3>Budín de Naranja</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/PostresTentacionLimon.jpg" alt="">
-                            <h3>Budín de limón</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/TortasCarrotCake.webp" alt="">
-                            <h3>Carrot Cake</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/TortaMousseDeChocolate.webp" alt="">
-                            <h3>Torta Mousse de Chocolate</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                    </ul>
-                </fieldset>
-            </section>
+            <fieldset id="pasteleria"><legend>Pastelería</legend>
+                <ul id="insertPasteleria"></ul>
+            </fieldset>
 
-            <section id="tragos">
-                <fieldset>
-                    <legend>
-                        <h2>Tragos</h2>
-                    </legend>
-                    <ul>
-                        <li>
-                            <img src="img/menu/TragosApperol.webp" alt="">
-                            <h3>Apperol</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/TragosGinTonic.webp" alt="">
-                            <h3>Gin Tonic de Flynn Paff</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                        <li>
-                            <img src="img/menu/TragosLicuadosFrutales.webp" alt="">
-                            <h3>Licuados Frutales</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti recusandae tempore dignissimos dolorem provident porro pariatur expedita eligendi quis. Accusamus magni pariatur dolore quam! Impedit maxime ex quod quisquam!</p>
-                        </li>
-                    </ul>
-                </fieldset>
-            </section>
+            <fieldset id="tortas"><legend>Tortas</legend>
+                <ul id="insertTortas"></ul>
+            </fieldset>
+            
+            <fieldset id="tragos"><legend>Tragos</legend>
+                <ul id="insertTragos"></ul>
+            </fieldset>
         </div>
     </main>
 
@@ -157,6 +72,8 @@
 
     <!-- Script para insertar los elementos del menú desde un JSON -->
     <!-- Esto debería estar dentro de script.js pero desconozco la razón por la cual no funcionaba cuando lo escribía ahí y si acá. No era un probelam de ./ o ../ -->
+    <!-- Por otro lado, la inserción de cada una de las secciones SE DEBERÍA haber resuelto con un solo 'fetch' y un único archivo .json que contenga toda la información, pero nos hizo falta conocimiento para el uso de data desde un json, por eso es que hay tantas funciones idénticas cuando no debería. -->
+
     <script>
 
         const insertBrunch = document.getElementById('insertBrunch');
@@ -175,7 +92,6 @@
             });
 
         });
-
 
         const insertDesayuno = document.getElementById('insertDesayuno');
         fetch ('json/desayuno.json')
@@ -228,6 +144,53 @@
 
         });
 
+        const insertPasteleria = document.getElementById('insertPasteleria');
+        fetch ('json/pasteleria.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertPasteleria.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+        const insertTortas = document.getElementById('insertTortas');
+        fetch ('json/tortas.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertTortas.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
+
+        const insertTragos = document.getElementById('insertTragos');
+        fetch ('json/tragos.json')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(post => {
+                insertTragos.insertAdjacentHTML('beforeend', `
+                <li>
+                    <img src="${post.img}" alt="">
+                    <h3>${post.nombre}</h3>
+                    <p class="precioMenu">Precio: $${post.precio}</p>
+                </li>`);
+            });
+
+        });
 
     </script>
 
