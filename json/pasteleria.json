@@ -19,7 +19,7 @@
         "id": 3,
         "categoria": "pasteleria",
         "nombre": "Budín de zanahoria",
-        "img": "img/menu/",
+        "img": "img/menu/budinzanahoria.jpg",
         "precio": 860,
         "ingredientes": ""
     },
@@ -51,7 +51,7 @@
         "id": 9,
         "categoria": "pasteleria",
         "nombre": "Croissants",
-        "img": "img/menu/",
+        "img": "img/menu/croissantjym.jpg",
         "precio": 380,
         "ingredientes": ""
     },
@@ -67,7 +67,7 @@
         "id": 11,
         "categoria": "pasteleria",
         "nombre": "Medialuna con jamón y queso",
-        "img": "img/menu/",
+        "img": "img/menu/medialunajym.jpg",
         "precio": 420
     }
 ]
