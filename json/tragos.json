@@ -3,7 +3,7 @@
         "id": 1,
         "categoria": "tragos",
         "nombre": "Corona 269 ml",
-        "img": "img/menu/",
+        "img": "img/menu/TragosCoronaLata.jpg",
         "precio": 680,
         "ingredientes": ""
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "categoria": "tragos",
         "nombre": "Corona 710 ml",
-        "img": "img/menu/",
+        "img": "img/menu/TragosCorona.jpg",
         "precio": 1200,
         "ingredientes": ""
     },
@@ -19,23 +19,15 @@
         "id": 3,
         "categoria": "tragos",
         "nombre": "Andes  473 ml",
-        "img": "img/menu/",
+        "img": "img/menu/TragosAndes.webp",
         "precio": 760,
-        "ingredientes": ""
-    },
-    {
-        "id": 4,
-        "categoria": "tragos",
-        "nombre": "Temple 473 m",
-        "img": "img/menu/",
-        "precio": 820,
         "ingredientes": ""
     },
     {
         "id": 5,
         "categoria": "tragos",
         "nombre": "Stella Artois 473 ml",
-        "img": "",
+        "img": "img/menu/TragosStellaArtois.jpg",
         "precio": 760,
         "ingredientes": ""
     },
@@ -59,7 +51,7 @@
         "id": 8,
         "categoria": "tragos",
         "nombre": "Campari",
-        "img": "",
+        "img": "img/menu/TragosCampari.jpg",
         "precio": 1180,
         "ingredientes": ""
     },
@@ -75,7 +67,7 @@
         "id": 10,
         "categoria": "tragos",
         "nombre": "Cynar Juleps",
-        "img": "",
+        "img": "img/menu/TragosCynar.jpg",
         "precio": 1250,
         "ingredientes": ""
     },
@@ -105,14 +97,6 @@
     },
     {
         "id": 14,
-        "categoria": "tragos",
-        "nombre": "Batido de Gancia",
-        "img": "",
-        "precio": 940,
-        "ingredientes": ""
-    },
-    {
-        "id": 15,
         "categoria": "tragos",
         "nombre": "Copa de vino",
         "img": "",

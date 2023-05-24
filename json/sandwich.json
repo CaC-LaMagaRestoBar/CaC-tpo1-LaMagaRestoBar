@@ -54,16 +54,5 @@
         "img": "img/menu/SandwichLaTiaLita.jpg",
         "ingredientes": "Ciabatta de pechuguitas grillé al limón con mouse de palta, queso en hebras y lechugas tricolor.",
         "precio": 2000
-    },
-    {
-        "id": 9,
-        "nombre": "Proteo",
-        "img": "img/menu/",
-        "ingredientes": "Bagel con salmón ahumado, queso crema, alcaparras y rúcula.",
-        "precio": 2240
     }
-
-
-
-    
 ]

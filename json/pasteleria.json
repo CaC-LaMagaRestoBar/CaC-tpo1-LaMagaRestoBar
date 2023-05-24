@@ -24,14 +24,6 @@
         "ingredientes": ""
     },
     {
-        "id": 4,
-        "categoria": "pasteleria",
-        "nombre": "Apple Crumble",
-        "img": "img/menu/",
-        "precio": 760,
-        "ingredientes": ""
-    },
-    {
         "id": 5,
         "categoria": "pasteleria",
         "nombre": "Rolls de canela",
@@ -53,14 +45,6 @@
         "nombre": "Alfajor de Chocolate",
         "img": "img/menu/PasteleriaAlfajorDeChocolate.webp",
         "precio": 680,
-        "ingredientes": ""
-    },
-    {
-        "id": 8,
-        "categoria": "pasteleria",
-        "nombre": "Scon de queso y hierbas",
-        "img": "img/menu/",
-        "precio": 740,
         "ingredientes": ""
     },
     {
