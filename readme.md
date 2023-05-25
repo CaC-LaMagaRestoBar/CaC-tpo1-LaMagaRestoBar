@@ -8,8 +8,8 @@ Integrantes del grupo:
 - Joaquín Obispo
 
 
-- Enlace del sitio web en GitHub Pages: https://joaquin087.github.io/CaC-tpo1-LaMagaRestoBar/ 
-- Enlace del repositorio de GitHub: https://github.com/joaquin087/CaC-tpo1-LaMagaRestoBar
+- Enlace del sitio web en GitHub Pages: https://github.com/CaC-LaMagaRestoBar/CaC-tpo1-LaMagaRestoBar
+- Enlace del repositorio de GitHub: https://cac-lamagarestobar.github.io/CaC-tpo1-LaMagaRestoBar/
 
 
 
