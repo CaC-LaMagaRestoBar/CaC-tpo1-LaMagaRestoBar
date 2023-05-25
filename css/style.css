@@ -28,11 +28,24 @@ html {
     padding: 1rem;
 }
 
-.cabecera h3 {
+blockquote {
+    color: whitesmoke;
     font-size: 1.6rem;
-    margin: 0 0 1rem 0;
+    text-align: center;
+    width: 93%;
+    margin: 1rem auto -1rem auto;
+    padding: 1rem;
     font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+
 }
+
+.cabecera p {
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
 
 .logotipo {
     align-items: center;
@@ -164,16 +177,6 @@ nav a:hover {
     width: 100%;
     grid-row: 1 / 5;
     grid-column: 1 / 2;
-}
-
-blockquote {
-    color: whitesmoke;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 85%;
-    margin: 1rem auto 1rem auto;
-    padding: 1rem;
-    font-style: italic;
 }
 
 

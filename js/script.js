@@ -180,7 +180,3 @@ function mostrar(seccion) {
   document.getElementById('tragos').style.display = 'none';
   document.getElementById(seccion).style.display = 'block';
 }
-
-function marcar(marcado) {
-  document
-}

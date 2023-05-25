@@ -8,7 +8,10 @@ header.innerHTML = `<div class="marca">
 </div>
 <div class="cabecera">
     <h1>La Maga Resto Bar</h1>
-    <blockquote>"Pero no se podía hacer otra cosa que mirar a la Maga tan hermosa al borde de la rayuela, y desear que impulsara el tejo de una casilla a otra, de la tierra al Cielo". Julio Cortázar</blockquote>    
+    <div>
+        <blockquote id="randomText">"Pero no se podía hacer otra cosa que mirar a la Maga tan hermosa al borde de la rayuela, y desear que impulsara el tejo de una casilla a otra, de la tierra al Cielo". Julio Cortázar</blockquote><p>Rayuela (1963), Julio Córtazar</p>
+    </div>
+    
 </div>
 
 <div class="direccion">
@@ -48,3 +51,26 @@ footer.innerHTML = `<div class="footer">
     <a href="https://www.facebook.com"><img src="img/rss-facebook.png" alt=""> Facebook</a>
 </div>
 </div>`;
+
+var texts = [
+    `“Pero no se podía hacer otra cosa que mirar a la Maga tan hermosa al borde de la rayuela, y desear que impulsara el tejo de una casilla a otra, de la tierra al Cielo”`,
+
+    `“Andábamos sin buscarnos, pero sabiendo que andábamos para encontrarnos”.`,
+    
+    `“Probablemente de todos nuestros sentimientos el único que no es verdaderamente nuestro es la esperanza. La esperanza le pertenece a la vida, es la vida misma defendiéndose"`,
+    
+    `“Música, melancólico alimento para los que vivimos de amor”.`,
+    
+    
+    `“La vida, como un comentario de otra cosa que no alcanzamos, y que está ahí al alcance del salto que no damos”.`,
+    
+    `“Y así es cómo los que nos iluminan son los ciegos”.`,
+    
+    `“La felicidad tenía que ser otra cosa, algo quizá más triste que esta paz y este placer, un aire como de unicornio o isla, una caída interminable en la inmovilidad”.`,
+    
+    `“Todo lo que se escribe en estos tiempos y que vale la pena leer está orientado hacia la nostalgia”.`,
+    
+    `“Había tanto tiempo perdido en vos, eras de tal manera el molde de lo que hubieras podido ser”.`
+    ];
+
+document.getElementById('randomText').innerHTML = texts[Math.floor(Math.random()*texts.length)];
