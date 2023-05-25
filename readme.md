@@ -16,20 +16,21 @@ Integrantes del grupo:
 
 
 La página cuenta con cuatro secciones:
-- Inicio o home: 
+- Inicio o home: La página inicial del sitio web está maquetada con grid y cuenta con 3 cajas distintas, una para la sección 'Instagram', que es la caja principal y ocupa todo el alto del sitio y 3/4 del ancho; la segunda caja es para la API de weatherapi.com que muestra el clima de los próximos tres días y la última caja contiene la API de Google Maps con la ubicación del bar y la posibilidad de activar la capa de tráfico.
 
-
+---
 
 - Menú online: La página 'Menú online' es utilizada para mostrar a través de la página web los distintos platos, postres y bebidas que sirve el bar, e información sobre ellas, como los ingredientes, imágenes representativas (propias), nombre y precio.
-El main del menú se separa inicialmente en dos cajas, una para una cinta de opciones que nos permite mostrar únicamente los platillos de una sección específica y la segunda caja para el contenido de cada una de las secciones.
+El main del menú se separa inicialmente en dos cajas, una para una cinta de opciones que nos permite mostrar únicamente los platillos de una sección específica (y esconder las otras) y la segunda caja para el contenido de cada una de las secciones.
 
+Todos los objetos del menú están insertados a través de archivos .json a través de la instrucción fetch.
 
-
+---
 
 
 - Cómo llegar: La sección también maquetada con grid está destinada a brindar mayor información sobre la ubicación del bar, mostrando el mapa en mayor tamaño que en la página de inicio, también incluyendo el botón para activar la capa de tráfico de la zona y añadiendo información útil como las líneas de colectivos, trenes y subtes que se pueden utilizar para acercarse al local.
 
-
+---
 
 
 
@@ -43,27 +44,26 @@ Por último, el botón 'enviar' inicialmente está desactivado (atributo disable
 Todos los campos se validan al mismo tiempo debido a que es una sola función la que lo hace, aunque está claro que sería una manera más elegante proporcionar una función por cada campo.
 
 
-
+---
 
 
 
 Además, el sitio cuenta con otras 3 secciones dinámicas que se muestran en todas las páginas: cabecera, barra de navegación y footer.
 Estos están incluidos dentro del archivo 'js/headerFooter.js' y hace uso del atributo 'querySelector' (para seleccionar la etiqueta HTML a modificar) y la instrucción 'innerHTML' para introducir un código HTML establecido en una única ocasión en tantas páginas como sea necesario, sin la necesidad de repetir el código en cada una de estas.
 
+Por otra parte, debajo del título se muestran frases extraído del libro Rayuela de Julio Córtazar, cuyo protagonista ("La Maga") da nombre al bar. Las frases están dentro de un array y cada que se recarga la página o se navega en las distintas secciones, se muestra una distinta con la función "Math.random".
 
 
 
 
 
 
-
-
+---
 
 === Recursos utilizados:
 
 - API Google Maps Plataform para mostrar el tráfico en la zona que se ubica el bar.
 https://developers.google.com/maps/documentation/javascript/examples/layer-traffic#maps_layer_traffic-javascript
-
 
 
 
