@@ -5,7 +5,7 @@
     height: 50vh;
     width: 100%;
     color: whitesmoke;
-    align-items: center;
+    min-height: 60vh;
 }
 
 .botonComoLlegar {
@@ -29,8 +29,16 @@
     /* text-align: center; */
     grid-row: 2 / 4;
     grid-column: 1 / 1;
-    height: 40vh;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.6rem;
 }
+
+.indicaciones h4, .indicaciones ul {
+    text-align: left;
+}
+
+
 
 .mapaComoLlegar {
     grid-row: 1 / 4;
