@@ -98,3 +98,15 @@ small {
     color: whitesmoke;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .menuSecciones {
+        width: 99%;
+
+    }
+    
+    .menuSecciones li {
+        width: 135px !important;
+    }
+
+}
